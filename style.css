@@ -1,0 +1,94 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+   }
+   .page-container {
+    max-width: 980px;
+    margin: 20px auto 0;
+   }
+   aside {
+    width: 25%;
+    background-color: #4fc1e3;
+    float: left;
+    
+   }
+   .right-side {
+    width: calc(75%);
+    float: right;
+   }
+   figure {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 20px auto;
+   }
+   .image {
+    display: block;
+    width: 100%;
+   }
+   .gen-info {
+    height: 100%;
+    padding-left: 20px;
+    color: white;
+   }
+   .title {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+   }
+   .data{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+   th {
+    text-align: left;
+   }
+   ol,ul {
+    list-style-type: none;
+   }
+   li {
+    margin-top: 5px;
+   }
+   header{
+    border-bottom: 2px solid #4fc0e395;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+   }
+   .abt{
+    border-bottom: 2px solid #4fc0e395;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+   }
+   .more-info {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+   }
+   .under-title {
+    float: left;
+    width: 50%;
+    height: 27px;
+   }
+   .date {
+    float: right;
+    width: 50%;
+    text-align: right;
+    color: #6f7278;
+    height: 27px;
+   }
+   p {
+    line-height: 2;
+   }
+   .custom-info{
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-size: 20px;
+   }
