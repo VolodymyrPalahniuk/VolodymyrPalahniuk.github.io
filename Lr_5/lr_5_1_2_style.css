@@ -1,0 +1,23 @@
+.column {
+            float: left;
+            width: calc(20% - 2px);
+            padding: 10px;
+            text-align: center;
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #99CCFF;
+            color: white;
+        }
+
+        .data {
+            background-color: #c9daf8;
+        }
+
+        .data:first-child {
+            background-color: #99CCFF;
+            color: white;
+            text-align: left; 
+        }

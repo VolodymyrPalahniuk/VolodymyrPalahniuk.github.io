@@ -1,0 +1,30 @@
+.column {
+    float: left;
+    width: calc(16.67% - 2px);
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #469536;
+    color: white;
+    width: calc(100% - 12px);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.data {
+    background-color: #b7d5ac;
+    text-align: left;
+}
+
+.data:first-child {
+    background-color: #99CCFF;
+}
+
+div.column.data:nth-child(2n+1) {
+    background-color: #dbead5;
+}
