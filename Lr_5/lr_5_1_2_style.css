@@ -6,7 +6,11 @@
             border: 1px solid white;
             box-sizing: border-box;
         }
-
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
         .header {
             background-color: #99CCFF;
             color: white;
@@ -21,3 +25,4 @@
             color: white;
             text-align: left; 
         }
+            
