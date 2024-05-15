@@ -21,3 +21,6 @@
             color: white;
             text-align: left; 
         }
+         .row {
+            display: flex;
+        }
