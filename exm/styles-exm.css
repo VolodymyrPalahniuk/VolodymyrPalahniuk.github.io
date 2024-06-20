@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #008080;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    background-color: #008080;
+    border: 2.5px solid black;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.box {
+    border: 2.5px solid black;
+}
+
+.red {
+    background-color: red;
+    width: 100px;
+    height: 80px;
+}
+
+.blue {
+    background-color: blue;
+    width: 100px;
+    height: 200px;
+}
+
+.green {
+    background-color: green;
+    width: 250px;
+    height: 200px;
+}
+
+.yellow {
+    background-color: yellow;
+    width: 250px;
+    height: 80px;
+}
