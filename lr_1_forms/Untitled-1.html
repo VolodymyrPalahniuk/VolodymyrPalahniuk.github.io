@@ -16,7 +16,7 @@
         <h2>Post Your Requirements</h2>
         <p>Please fill the form below to receive a quote for workspace. Please add all the details required.</p>
         <div class="form-container">
-            <form class="contact-form">
+            <form id="contact-form" class="contact-form" action="lr_1_forms/Untitled-2.html" method="get">
                 <div class="contact-details">
                     <h2>Contact details</h2>
                     <p>Please fill your information so we can get in touch with you.</p> 
@@ -40,10 +40,11 @@
                 </div>
             </form>
         </div>
+    </div>
 
-        <div class="button-container">
-            <button type="submit" class="submit-btn">Next</button>
-        </div>
+    <!-- Кнопка поза формою -->
+    <div class="button-container">
+        <button type="submit" class="submit-btn" form="contact-form">Next</button>
     </div>
 
 </body>
