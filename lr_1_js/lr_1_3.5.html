@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ввести та вивести при навдені курсора</title>
+    <script type="text/javascript">
+        function askOnHover() {
+            var info = prompt("Введіть текст:");
+            if (info !== null) {
+                document.write("Ви ввели: " + info);
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onmouseover="askOnHover()">Наведись на мене!</a>
+</body>
+</html>

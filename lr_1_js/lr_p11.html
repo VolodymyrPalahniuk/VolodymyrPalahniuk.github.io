@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, world!</title>
+    <script type="text/javascript">
+        var n = 10;
+        var szHelloMsg = "Hello, world!";
+
+        function printNString(szString, n) {
+            var i = 0;
+            while (i < n) {
+                document.write(szString.bold() + "<br>");
+                i++;
+            }
+        }
+
+        function printHello() {
+            printNString(szHelloMsg, 10);
+        }
+    </script>
+</head>
+<body style="background-color: white;">
+    <h1>JavaScript Test</h1>
+    <p>Message:<br>
+    <script type="text/javascript">
+        printHello();
+    </script>
+</p>
+</body>
+</html>

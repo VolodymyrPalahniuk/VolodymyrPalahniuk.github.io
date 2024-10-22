@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Введення імен до натискання відміни</title>
+    <script type="text/javascript">
+        function getNames() {
+            var names = "";
+            var name;
+
+            while ((name = prompt("Ввдіть ім'я, або натисніть відміна щоб закінчити:")) !== null) {
+                names += name + "<br>";
+            }
+
+            document.write("Імена:<br>" + names);
+        }
+    </script>
+</head>
+<body onload="getNames()">
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Введення студентів</title>
+    <script type="text/javascript">
+        function getStudentInfo() {
+            var count;
+            
+            while (true) {
+                count = prompt("Введіть кількість студентів:");
+                
+                if (count !== null && !isNaN(count) && Number.isInteger(parseFloat(count)) && count > 0) {
+                    count = parseInt(count);
+                    break;
+                } else {
+                    alert("Будь ласка, введіть коректне ціле число студентів.");
+                }
+            }
+
+            var students = "";
+
+            for (var i = 0; i < count; i++) {
+                var name = prompt("Введіть ім'я студента №" + (i + 1));
+
+                if (name === null) {
+                    break;
+                }
+
+                students += name + "<br>";
+            }
+
+            document.getElementById("studentList").innerHTML = "Студенти:<br>" + students;
+        }
+    </script>
+</head>
+<body onload="getStudentInfo()">
+    <div id="studentList"></div>
+</body>
+</html>

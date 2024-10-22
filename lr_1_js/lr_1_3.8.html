@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Сезон по місяцю</title>
+    <script type="text/javascript">
+        function findSeason() {
+            var month = parseInt(prompt("Введіть номер місяця (1-12):"));
+            var season;
+
+            if (month == 12 || month == 1 || month == 2) {
+                season = "Зима";
+            } else if (month >= 3 && month <= 5) {
+                season = "Весна";
+            } else if (month >= 6 && month <= 8) {
+                season = "Літо";
+            } else if (month >= 9 && month <= 11) {
+                season = "Осінь";
+            } else {
+                season = "НЕВІРНО ВВЕДЕНИЙ МІСЯЦЬ ЄРЕТИК!";
+            }
+
+            document.write("Сезон такий: " + season);
+        }
+    </script>
+</head>
+<body onload="findSeason()">
+</body>
+</html>
