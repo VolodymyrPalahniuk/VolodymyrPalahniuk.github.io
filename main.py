@@ -4,7 +4,7 @@ import requests
 from datetime import datetime
 
 
-bot  = telebot.TeleBot("") #тут в лапки вставити токен з BotFather
+bot  = telebot.TeleBot("7771536101:AAGwQbk5e_MEPCfF2BZu3YUMzVSC4Xgdmyw")
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.reply_to(message, "Привіт!")
