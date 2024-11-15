@@ -27,7 +27,7 @@
 }
 
 .container {
-    border: 1px solid #00a; /* Синя рамка */
+    border: 1px solid #00a;
     padding: 10px;
     width: 300px;
     margin: 20px auto;
@@ -40,7 +40,7 @@
 }
 
 .container div label {
-    width: 150px; /* Ширина для тексту */
+    width: 150px;
 }
 
 .container input[type="range"] {
