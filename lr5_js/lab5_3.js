@@ -37,7 +37,6 @@ function showTabsContent(b){
 }
 
 function generate(tabNumber) {
-    // Отримуємо значення з повзунків для конкретної вкладки
     var rtl = document.getElementById(`rtl${tabNumber}`)?.value || 0;
     var rtr = document.getElementById(`rtr${tabNumber}`)?.value || 0;
     var rbr = document.getElementById(`rbr${tabNumber}`)?.value || 0;
@@ -45,7 +44,6 @@ function generate(tabNumber) {
     var maxWidth = document.getElementById(`maxWidth${tabNumber}`)?.value || 100;
     var opacity = document.getElementById(`opacity${tabNumber}`)?.value || 1;
 
-    // Оновлюємо текстові поля для активної вкладки
     document.getElementById(`ttl${tabNumber}`) && (document.getElementById(`ttl${tabNumber}`).value = rtl);
     document.getElementById(`ttr${tabNumber}`) && (document.getElementById(`ttr${tabNumber}`).value = rtr);
     document.getElementById(`tbr${tabNumber}`) && (document.getElementById(`tbr${tabNumber}`).value = rbr);
@@ -53,7 +51,6 @@ function generate(tabNumber) {
     document.getElementById(`maxWidthValue${tabNumber}`) && (document.getElementById(`maxWidthValue${tabNumber}`).value = maxWidth);
     document.getElementById(`opacityValue${tabNumber}`) && (document.getElementById(`opacityValue${tabNumber}`).value = opacity);
 
-    // Застосовуємо стилі до блоку конкретної вкладки
     var activeBlock = document.getElementById(`block${tabNumber}`);
     if (activeBlock) {
         activeBlock.style.borderRadius = `${rtl}px ${rtr}px ${rbr}px ${rbl}px`;
@@ -61,7 +58,6 @@ function generate(tabNumber) {
         activeBlock.style.opacity = opacity;
     }
 
-    // Виводимо CSS код тільки для активної вкладки
     var cssOutput = document.getElementById(`cssOutput1`);
     if (cssOutput) {
         cssOutput.value = `border-radius: ${rtl}px ${rtr}px ${rbr}px ${rbl}px;`;
