@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab5_3.css">
+</head>
+<body>
+    <div id="tabs">
+        <div class="tab whiteborder">Tab 1</div>
+        <div class="tab">Tab 2</div>
+        <div class="tab">Tab 3</div>
+    
+        <div class="tabContent">
+            <div>
+                <label for="rtl1">Верхній лівий радіус:</label>
+                <input type="range" id="rtl1" min="0" max="100" value="0" oninput="generate(1)">
+                <input type="text" id="ttl1" value="0">
+            </div>
+            <div>
+                <label for="rtr1">Верхній правий радіус:</label>
+                <input type="range" id="rtr1" min="0" max="100" value="0" oninput="generate(1)">
+                <input type="text" id="ttr1" value="0">
+            </div>
+            <div>
+                <label for="rbr1">Нижній правий радіус:</label>
+                <input type="range" id="rbr1" min="0" max="100" value="0" oninput="generate(1)">
+                <input type="text" id="tbr1" value="0">
+            </div>
+            <div>
+                <label for="rbl1">Нижній лівий радіус:</label>
+                <input type="range" id="rbl1" min="0" max="100" value="0" oninput="generate(1)">
+                <input type="text" id="tbl1" value="0">
+            </div>
+            <div class="block" id="block1"></div>
+            <div>
+                <label for="cssOutput1">CSS код:</label>
+                <textarea id="cssOutput1" readonly rows="3" style="width: 100%;"></textarea>
+            </div>
+        </div>
+    
+        <div class="tabContent hide">
+            <div>
+                <label for="maxWidth2">Максимальна ширина:</label>
+                <input type="range" id="maxWidth2" min="50" max="300" value="100" oninput="generate(2)">
+                <input type="text" id="maxWidthValue2" value="100">
+            </div>
+            <div class="block" id="block2"></div>
+            <div>
+                <label for="cssOutput2">CSS код:</label>
+                <textarea id="cssOutput2" readonly rows="3" style="width: 100%;"></textarea>
+            </div>
+        </div>
+    
+        <div class="tabContent hide">
+            <div>
+                <label for="opacity3">Прозорість:</label>
+                <input type="range" id="opacity3" min="0" max="1" step="0.1" value="1" oninput="generate(3)">
+                <input type="text" id="opacityValue3" value="1">
+            </div>
+            <div class="block" id="block3"></div>
+            <div>
+                <label for="cssOutput3">CSS код:</label>
+                <textarea id="cssOutput3" readonly rows="3" style="width: 100%;"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="lab5_3.js"></script>
+</body>
+</html>
