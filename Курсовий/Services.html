@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damien Photographer</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+          <span class="navbar-brand">DAMIEN</span>
+          <div class="navbar-center" id="navbarMenu">
+              <div class="navbar-menu">
+                  <a href="index.html">Головна</a>
+                  <a href="About.html">Про мене</a>
+                  <a href="Portfolio.html">Портфоліо</a>
+                  <a href="#" class="active">Послуги</a>
+              </div>
+          </div>
+          <button class="contact-button" id="open-modal">Зв'язок зі мною</button>
+          <button class="menu-toggle" onclick="toggleMenu()" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="menu-toggle-icon"></span>
+          </button>
+      </nav>
+    </header>
+    <main>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <div class="form-container">
+            <span class="close" id="close-modal">&times;</span>
+            <h2 class="about-heading">Зв'язатися зі мною</h2>
+            <p class="biography-paragraf">Маєте до нас конкретне запитання чи повідомлення? 
+              Будь ласка, заповніть контактну форму нижче, і ми зв'яжемося з вами якнайшвидше.</p>
+            <form class="contact-form">
+              <div class="form-group">
+                <div class="form-sub">
+                  <span>Ім'я</span>
+                  <input class="form-massage" type="text" id="first-name" name="first-name" placeholder="Ім'я" required>
+                </div>
+                <div class="form-sub">
+                  <span>Прізвище</span>
+                  <input type="text" id="last-name" name="last-name" placeholder="Прізвище" required>
+                </div>  
+              </div>
+              <div class="form-group">
+                <div class="form-sub">
+                  <span>Електронна адреса</span>
+                  <input type="email" id="email" name="email" placeholder="Електронна адреса" required>
+                </div>
+                <div class="form-sub">
+                  <span>Номер телефону</span>
+                  <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                </div>  
+              </div>
+              <textarea id="message" name="message" placeholder="Повідомлення" rows="5" required></textarea>
+            </form>
+            <div class="hs-1-container">
+              <div class="hs-1-sub-container-1 form">
+                <span class="hs-1-sub-con-heading">Відправити<br>повідомлення</span>
+                <button class="hs-1-button">
+                  <div class="hs-1-icon">
+                    <i class="hs-1-vector-stroke"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="about-hero-container">
+            <div class="about-hero-image-container hide-c-image">
+              <img class="about-hero-image-2" src="assets/images/Services-2.webp" alt="Photo of a man in a field">
+            </div>
+            <div class="services-hero-image hide-m-c hide-m"></div>
+            <div class="about-hero-sub-container">
+              <div class="about-hero-text-container services-hero-text">
+                <h2 class="about-text">Послуги</h2>
+                <span class="about-heading">Різноманітні пропозиції з фотографування</span>
+                <span class="biography-paragraf">
+                    Відкрийте для себе повний спектр професійних фотопослуг, адаптованих до вашого бачення. Від вічних 
+                    портретів до захопливих репортажів з подій - у кожному проекті я вношу унікальне поєднання 
+                    креативності та технічного досвіду.
+                  </span>
+              </div>
+            </div>
+            <div class="about-hero-sub-container-2 service-hero-sub-container-2 hide-m-c hide-m">
+              <i class="about-hero-abstract-design"></i>
+              <span class="hs-1-text about-hero-text">Scroll Down To See My Journey</span>
+            </div>
+      </section>
+
+      <section class="about-container service-container" id="servicePortret">
+          <div class="about-biography-container service-sub-container">
+          <div class = "service-sub-container">
+            <div class="service-sub-container-2">
+            <h2 class="my-biography">Портретна фотографія</h2>
+              <span class="biography-paragraf">
+                Наша послуга портретної фотографії - це демонстрація вашої унікальної індивідуальності. 
+                Незалежно від того, чи потрібен вам професійний портрет, сімейний портрет або персональна
+                фотосесія, ми створюємо зображення, які відображають ваше справжнє «я». Ми тісно співпрацюємо 
+                з вами, щоб виявити ваші найкращі ракурси та вирази обличчя, гарантуючи, що кожен портрет розповість 
+                вашу історію.
+              </span>
+              <div class="case-button service-view">
+                <span class="case-button-text">View Projects</span>
+                <div class="case-button-icon"><i class="case-button-vector"></i></div>
+              </div>
+            </div>
+              <div class="service-sub-container-3">
+                <img class="service-image" src="assets/images/service_portet.webp" alt="Photo of a man in a field">
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section class="price-container">
+          <div class="price-cub-container">
+            <div class="price-sub-container-1">
+            <span class="about-text price-head">Індивідуальна зустріч</span>
+            <div class="price-sub-container-2">
+              <div class="price-sub-container-3">
+                <span class="price-text">$250</span>
+                  <div class="case-button service-view">
+                    <span class="case-button-text price">Замовити</span>
+                    <div class="case-button-icon"><i class="case-button-vector"></i></div>
+                </div>
+              </div>
+          </div>
+            </div>
+            <div class="price-sub-container-4">
+            <div class="s-h-sub-containers">
+              <div class="s-h-icon">
+                  <div class="s-h-vector"></div>
+              </div>
+              <span class="s-h-text">Ідеально підходить для передачі вашої унікальної індивідуальності та стилю.</span>
+            </div>
+            <div class="s-h-sub-containers">
+              <div class="s-h-icon">
+                  <div class="s-h-vector"></div>
+              </div>
+              <span class="s-h-text">Включає 2-годинну фотосесію та 20 професійно відредагованих зображень.</span>
+            </div>
+            <div class="s-h-sub-containers">
+              <div class="s-h-icon">
+                  <div class="s-h-vector"></div>
+              </div>
+              <span class="s-h-text">Додаткові зображення можна придбати за $10 за кожне.</span>
+            </div>
+            </div>
+          </div>
+          <div class="price-cub-container">
+            <div class="price-sub-container-1">
+              <span class="about-text price-head">Сімейна фотосесія</span>
+              <div class="price-sub-container-2">
+                <div class="price-sub-container-3">
+                  <span class="price-text">$400</span>
+                    <div class="case-button service-view">
+                      <span class="case-button-text price">Замовити</span>
+                      <div class="case-button-icon"><i class="case-button-vector"></i></div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="price-sub-container-4">
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Ідеально підходить для створення незабутніх спогадів з вашими близькими.</span>
+              </div>
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Включає 3-годинну фотосесію та 30 професійно відредагованих зображень.</span>
+              </div>
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Додаткові зображення можна придбати за $10 за кожне.</span>
+              </div>
+            </div>
+          </div>
+          <div class="price-cub-container">
+            <div class="price-sub-container-1">
+              <span class="about-text price-head">Парна сесія</span>
+              <div class="price-sub-container-2">
+                <div class="price-sub-container-3">
+                  <span class="price-text">$300</span>
+                    <div class="case-button service-view">
+                      <span class="case-button-text price">Замовити</span>
+                      <div class="case-button-icon"><i class="case-button-vector"></i></div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="price-sub-container-4">
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Відсвяткуйте історію вашого кохання інтимною фотосесією.</span>
+              </div>
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Включає 2,5-годинну фотосесію та 25 професійно відредагованих зображень.</span>
+              </div>
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Додаткові зображення можна придбати по $10 за кожне.</span>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="about-container service-container" id="serviceEvents">
+          <div class="about-biography-container service-sub-container">
+          <div class = "service-sub-container">
+            <div class="service-sub-container-2">
+            <h2 class="my-biography">Фотографія подій</h2>
+              <span class="biography-paragraf">
+                Наша послуга з фотозйомки подій спрямована на те, щоб закарбувати
+                магію ваших особливих подій. Незалежно від того, чи це весілля, чи 
+                корпоративний захід, чи святкування важливої події, ми задокументуємо 
+                кожну сердечну мить. Ми зливаємося з фоном, забезпечуючи природні та 
+                відверті знімки, які відображають емоції дня.
+              </span>
+              <div class="case-button service-view">
+                <span class="case-button-text">View Projects</span>
+                <div class="case-button-icon"><i class="case-button-vector"></i></div>
+            </div>
+            </div>
+              <div class="service-sub-container-3">
+                <img class="service-image" src="assets/images/service_event.webp" alt="Photo of a man in a field">
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section class="price-container">
+          <div class="price-cub-container">
+            <div class="price-sub-container-1">
+            <span class="about-text price-head">Весільна фотозйомка</span>
+            <div class="price-sub-container-2">
+              <div class="price-sub-container-3">
+                <span class="price-text">$1,500</span>
+                  <div class="case-button service-view">
+                    <span class="case-button-text price">Замовити</span>
+                    <div class="case-button-icon"><i class="case-button-vector"></i></div>
+                </div>
+              </div>
+          </div>
+            </div>
+            <div class="price-sub-container-4">
+            <div class="s-h-sub-containers">
+              <div class="s-h-icon">
+                  <div class="s-h-vector"></div>
+              </div>
+              <span class="s-h-text">Зафіксуйте магію вашого особливого дня.</span>
+            </div>
+            <div class="s-h-sub-containers">
+              <div class="s-h-icon">
+                  <div class="s-h-vector"></div>
+              </div>
+              <span class="s-h-text">Включає в себе повний день зйомки, другого фотографа та 300+ професійно відредагованих зображень.</span>
+            </div>
+            <div class="s-h-sub-containers">
+              <div class="s-h-icon">
+                  <div class="s-h-vector"></div>
+              </div>
+              <span class="s-h-text">Доступні індивідуальні пакети, що відповідають вашим конкретним весільним потребам.
+              </span>
+            </div>
+            </div>
+          </div>
+          <div class="price-cub-container">
+            <div class="price-sub-container-1">
+              <span class="about-text price-head">Висвітлення вечірки</span>
+              <div class="price-sub-container-2">
+                <div class="price-sub-container-3">
+                  <span class="price-text">$800</span>
+                    <div class="case-button service-view">
+                      <span class="case-button-text price">Замовити</span>
+                      <div class="case-button-icon"><i class="case-button-vector"></i></div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="price-sub-container-4">
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Збережіть веселощі та хвилювання вашої події.</span>
+              </div>
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Включає до 4 годин зйомки та 150+ професійно відредагованих зображень.</span>
+              </div>
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Додаткові години можуть бути додані за ціною $150 за годину.</span>
+              </div>
+            </div>
+          </div>
+          <div class="price-cub-container">
+            <div class="price-sub-container-1">
+              <span class="about-text price-head">Корпоративні заходи</span>
+              <div class="price-sub-container-2">
+                <div class="price-sub-container-3">
+                  <span class="price-text">$900</span>
+                    <div class="case-button service-view">
+                      <span class="case-button-text price">Замовити</span>
+                      <div class="case-button-icon"><i class="case-button-vector"></i></div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="price-sub-container-4">
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Індивідуальні рішення для корпоративних зустрічей, конференцій та семінарів.</span>
+              </div>
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Зв'яжіться зі мною, щоб отримати індивідуальну пропозицію на основі вимог вашого заходу.</span>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="about-container service-container" id="serviceCommercial">
+          <div class="about-biography-container service-sub-container">
+          <div class = "service-sub-container">
+            <div class="service-sub-container-2">
+            <h2 class="my-biography">Комерційна фотографія</h2>
+              <span class="biography-paragraf">
+                У світі бізнесу переконливе зображення може мати вирішальне 
+                значення. Наша послуга комерційної фотографії покликана посилити 
+                візуальну ідентичність вашого бренду. Ми створюємо яскраві 
+                зображення для ваших продуктів, послуг та маркетингових кампаній,
+                які справляють незабутнє враження на аудиторію.
+              </span>
+              <div class="case-button service-view">
+                <span class="case-button-text">View Projects</span>
+                <div class="case-button-icon"><i class="case-button-vector"></i></div>
+            </div>
+            </div>
+              <div class="service-sub-container-3">
+                <img class="service-image" src="assets/images/service_commercial.webp" alt="Photo of a man in a field">
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section class="price-container">
+          <div class="price-cub-container">
+            <div class="price-sub-container-1">
+            <span class="about-text price-head">Продуктова фотографія</span>
+            <div class="price-sub-container-2">
+              <div class="price-sub-container-3">
+                <span class="price-text">$500</span>
+                  <div class="case-button service-view">
+                    <span class="case-button-text price">Замовити</span>
+                    <div class="case-button-icon"><i class="case-button-vector"></i></div>
+                </div>
+              </div>
+          </div>
+            </div>
+            <div class="price-sub-container-4">
+            <div class="s-h-sub-containers">
+              <div class="s-h-icon">
+                  <div class="s-h-vector"></div>
+              </div>
+              <span class="s-h-text">Покажіть свою продукцію в найкращому світлі.</span>
+            </div>
+            <div class="s-h-sub-containers">
+              <div class="s-h-icon">
+                  <div class="s-h-vector"></div>
+              </div>
+              <span class="s-h-text">Включає південну фотосесію, 20 професійно відредагованих зображень продукції та файли з високою роздільною здатністю.</span>
+            </div>
+            <div class="s-h-sub-containers">
+              <div class="s-h-icon">
+                  <div class="s-h-vector"></div>
+              </div>
+              <span class="s-h-text">Додаткові зображення можна придбати за $20 за кожне.</span>
+            </div>
+            </div>
+          </div>
+          <div class="price-cub-container">
+            <div class="price-sub-container-1">
+              <span class="about-text price-head">Фотографія нерухомості</span>
+              <div class="price-sub-container-2">
+                <div class="price-sub-container-3">
+                  <span class="price-text">$700</span>
+                    <div class="case-button service-view">
+                      <span class="case-button-text price">Замовити</span>
+                      <div class="case-button-icon"><i class="case-button-vector"></i></div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="price-sub-container-4">
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Ідеально підходить для створення незабутніх спогадів з вашими близькими.</span>
+              </div>
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Включає 3-годинну фотосесію та 30 професійно відредагованих зображень.</span>
+              </div>
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Додаткові зображення можна придбати за $10 за кожне.</span>
+              </div>
+            </div>
+          </div>
+          <div class="price-cub-container">
+            <div class="price-sub-container-1">
+              <span class="about-text price-head">Корпоративна фотосесія</span>
+              <div class="price-sub-container-2">
+                <div class="price-sub-container-3">
+                  <span class="price-text">$1300</span>
+                    <div class="case-button service-view">
+                      <span class="case-button-text price">Замовити</span>
+                      <div class="case-button-icon"><i class="case-button-vector"></i></div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="price-sub-container-4">
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Створіть візуальну розповідь, яка відповідатиме ідентичності вашого бренду.</span>
+              </div>
+              <div class="s-h-sub-containers">
+                <div class="s-h-icon">
+                    <div class="s-h-vector"></div>
+                </div>
+                <span class="s-h-text">Зв'яжіться з нами, щоб обговорити ваші потреби у фотозйомці бренду та отримати персоналізовану пропозицію.</span>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="about-container">
+          <div class="about-sub-container">
+            <div class="about-text-container">
+              <h2 class="about-text">Часті запитання</h2>
+              <span class="about-heading">Відповіді на поширені питання</span>
+            </div>
+          </div>
+          <div class="faq-sub-container">
+            <div class="faq-container">
+              <div class="faq-item">
+              <div class="faq-container-q">
+                <span class="faq-heading">
+                  На якому типі фотографії ви спеціалізуєтесь?</span>
+                <button class="faq-button">
+                  <span class="faq-icon"><i class="faq-vector-open"></i></span>
+                </button>
+              </div>
+              <span class="faq-container-a">
+                Я спеціалізуюся на [портретній, пейзажній, івент та ін.] фотографії,
+                ловлю моменти, які розповідають унікальні історії.</span>
+              </div>
+              <div class="line"></div>
+              <div class="faq-item">
+              <div class="faq-container-q">
+              <span class="faq-heading">
+                Як я можу замовити у вас фотосесію?</span>
+              <button class="faq-button">
+                <span class="faq-icon"><i class="faq-vector-close"></i></span>
+              </button>
+            </div>
+              <span class="faq-container-a hide">
+                Я спеціалізуюся на [портретній, пейзажній, івент та ін.] фотографії,
+                ловлю моменти, які розповідають унікальні історії.</span>
+              </div>
+              <div class="line"></div>
+              <div class="faq-item">
+              <div class="faq-container-q">
+              <span class="faq-heading">
+                Яке обладнання ви використовуєте для фотографування?</span>
+              <button class="faq-button">
+                <span class="faq-icon"><i class="faq-vector-close"></i></span>
+              </button>
+            </div>
+              <span class="faq-container-a hide">
+                Я спеціалізуюся на [портретній, пейзажній, івент та ін.] фотографії,
+                ловлю моменти, які розповідають унікальні історії.</span>
+              </div>
+              <div class="line"></div>
+              <div class="faq-item">
+              <div class="faq-container-q">
+              <span class="faq-heading">
+                Чи можу я запросити певне місце для фотосесії?</span>
+              <button class="faq-button">
+                <span class="faq-icon"><i class="faq-vector-close"></i></span>
+              </button>
+            </div>
+              <span class="faq-container-a hide">
+                Я спеціалізуюся на [портретній, пейзажній, івент та ін.] фотографії,
+                ловлю моменти, які розповідають унікальні історії.</span>
+              </div>
+            </div>
+            <div class="faq-line"></div>
+            <div class="faq-container hide-m">
+              <div class="faq-item">
+                <div class="faq-container-q">
+                  <span class="faq-heading">
+                    На що схожий ваш процес редагування?</span>
+                  <button class="faq-button">
+                    <span class="faq-icon"><i class="faq-vector-close"></i></span>
+                  </button>
+                </div>
+                <span class="faq-container-a hide">
+                  Я спеціалізуюся на [портретній, пейзажній, івент та ін.] фотографії,
+                  ловлю моменти, які розповідають унікальні історії.</span>
+              </div>
+              <div class="line"></div>
+              <div class="faq-item">
+                <div class="faq-container-q">
+                <span class="faq-heading">
+                  Чи входять цифрові файли у ваші фотопакети?</span>
+                <button class="faq-button">
+                  <span class="faq-icon"><i class="faq-vector-close"></i></span>
+                </button>
+              </div>
+                <span class="faq-container-a hide">
+                  Я спеціалізуюся на [портретній, пейзажній, івент та ін.] фотографії,
+                  ловлю моменти, які розповідають унікальні історії.</span>
+              </div>
+              <div class="line"></div>
+              <div class="faq-item">
+                <div class="faq-container-q">
+                <span class="faq-heading">
+                  Чи пропонуєте ви друк своїх фотографій?</span>
+                <button class="faq-button">
+                  <span class="faq-icon"><i class="faq-vector-close"></i></span>
+                </button>
+              </div>
+                <span class="faq-container-a hide">
+                  Я спеціалізуюся на [портретній, пейзажній, івент та ін.] фотографії,
+                  ловлю моменти, які розповідають унікальні історії.</span>
+              </div>
+              <div class="line"></div>
+              <div class="faq-item">
+                <div class="faq-container-q">
+                <span class="faq-heading">
+                  Скільки часу потрібно для отримання відредагованих фотографій після сесії?</span>
+                <button class="faq-button">
+                  <span class="faq-icon"><i class="faq-vector-close"></i></span>
+                </button>
+              </div>
+                <span class="faq-container-a hide">
+                  Я спеціалізуюся на [портретній, пейзажній, івент та ін.] фотографії,
+                  ловлю моменти, які розповідають унікальні історії.</span>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+      <div class="footer-logo">
+        <div class="footer-logo-container">
+          <div class="logo-damien">
+            <div class="vector-n"></div>
+            <div class="vector-e"></div>
+            <div class="vector-i"></div>
+            <div class="vector-m"></div>
+            <div class="vector-a"></div>
+            <div class="vector-d"></div>
+          </div>
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-sub-container">
+          <span class="info-block-icon">
+              <i class="info-block-vector"></i>
+          </span>
+          <span class="info-block-text">Event Photography</span>
+        </div>
+        <div class="info-block-sub-container">
+          <span class="info-block-icon">
+            <i class="info-block-vector"></i>
+        </span>
+          <span class="info-block-text">Comercial Photography</span>
+        </div>
+        <div class="info-block-sub-container">
+          <span class="info-block-icon">
+            <i class="info-block-vector"></i>
+          </span>
+          <span class="info-block-text">Product Photography</span>
+        </div>
+        <div class="info-block-sub-container">
+          <span class="info-block-icon">
+            <i class="info-block-vector"></i>
+          </span>
+          <span class="info-block-text">Wedding Photography</span>
+        </div>
+        <div class="info-block-sub-container">
+          <span class="info-block-icon">
+            <i class="info-block-vector"></i>
+          </span>
+          <span class="info-block-text">Landscape Photography</span>
+        </div>
+        <div class="info-block-sub-container">
+          <span class="info-block-icon">
+            <i class="info-block-vector"></i>
+          </span>
+          <span class="info-block-text">Branding Photography</span>
+        </div>
+        <div class="info-block-sub-container">
+          <span class="info-block-icon">
+            <i class="info-block-vector"></i>
+          </span>
+          <span class="info-block-text">Portrait Photography</span>
+        </div>
+      </div>
+      <div class="footer-2">
+        <div class="footer-container">
+          <div class="footer-sub-container">
+            <span class="footer-text">Більш змістовний дім для фотографії</span>
+              <div class="hs-1-container">
+                <div class="hs-1-sub-container-1">
+                  <span class="hs-1-sub-con-heading">Давайте</span>
+                  <div class="hs-1-button">
+                    <div class="hs-1-icon">
+                      <i class="hs-1-vector-stroke"></i>
+                    </div>
+                  </div>
+                </div>
+                <span class="hs-1-work-together">Працювати разом</span>
+              </div>
+          </div>
+          <nav class="footer-sub-container-2">
+            <nav class="links-container">
+              <nav class="links-sub-container">
+                <a href="#" class="footer-text">Головна</a>
+                <nav class="footer-button-container">
+                  <div class="footer-button">
+                    <a href="#AboutMe" class="footer-text-2">Про мене</a>
+                  </div>
+                  <div class="footer-button">
+                    <a href="#MyWorks" class="footer-text-2">Мої роботи</a>
+                  </div>
+                  <div class="footer-button">
+                    <a href="#Testimonials" class="footer-text-2">Відгуки</a>
+                  </div>
+                </nav>
+              </nav>
+              <nav class="links-sub-container">
+                <a href="About.html" class="footer-text">Клієнти</a>
+                <nav class="footer-button-container">
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">Klovesto</a>
+                  </div>
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">Nukeway</a>
+                  </div>
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">Cloven’s</a>
+                  </div>
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">MenVol</a>
+                  </div>
+                </nav>
+              </nav>
+            </nav>
+            <div class="links-container">
+              <div class="links-sub-container">
+                <a href="Portfolio.html" class="footer-text">Портфоліо</a>
+                <div class="footer-button-container">
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">Події</a>
+                  </div>
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">Портрет</a>
+                  </div>
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">Брендування</a>
+                  </div>
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">Комерція</a>
+                  </div>
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">Весілля</a>
+                  </div>
+                </div>
+              </div>
+              <div class="links-sub-container">
+                <a href="Services.html" class="footer-text">Послуги</a>
+                <div class="footer-button-container">
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">Портрети</a>
+                  </div>
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">Події</a>
+                  </div>
+                  <div class="footer-button">
+                    <a href="#" class="footer-text-2">Комерційні</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="footer-container-2">
+          <span class="copyright">Terms & Conditions Privacy Policy</span>
+          <div class="about-social-buttons hide-m">
+            <button class="about-social-button about-social-icon">
+                <i class="fa-brands fa-facebook fa-lg"></i>
+            </button>
+            <button class="about-social-button about-social-icon">
+                <i class="fa-brands fa-twitter fa-lg"></i>
+            </button>
+            <button class="about-social-button about-social-icon">
+                <i class="fa-brands fa-linkedin fa-lg"></i>
+            </button>
+          </div>
+          <span class="copyright">© 2024 Damien Braun Photography. All rights reserved.</span>
+
+          <div class="about-social-buttons hide-c">
+            <button class="about-social-button about-social-icon">
+              <i class="fa-brands fa-facebook fa-lg"></i>
+          </button>
+          <button class="about-social-button about-social-icon">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+          </button>
+          <button class="about-social-button about-social-icon">
+            <i class="fa-brands fa-linkedin fa-lg"></i>
+          </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </footer>
+    <script src="scriptServices.js"></script>
+</body>
+</html>

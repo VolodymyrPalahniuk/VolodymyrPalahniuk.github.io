@@ -1,0 +1,32 @@
+[
+    {
+        "id": "case-1",
+        "title": "Faces of Resilience",
+        "date": "Квітень 2020",
+        "image": {
+            "src": "assets/images/case-1.webp",
+            "alt": "Portrait of a woman on an orange canvas"
+        },
+        "buttonText": "Переглянути проект"
+    },
+    {
+        "id": "case-2",
+        "title": "A Wedding Tale",
+        "date": "Січень 2020",
+        "image": {
+            "src": "assets/images/case-2.webp",
+            "alt": "Woman with jewelry sits in front of the camera"
+        },
+        "buttonText": "Переглянути проект"
+    },
+    {
+        "id": "case-3",
+        "title": "Product Elegance",
+        "date": "Грудень 2022",
+        "image": {
+            "src": "assets/images/case-3.webp",
+            "alt": "A box with the brand's inscription: burberry"
+        },
+        "buttonText": "Переглянути проект"
+    }
+]
